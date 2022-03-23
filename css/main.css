@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Releway, sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER LAYOUT */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+#logo {
+    margin-left: 30px;
+}
+
+.nav {
+    align-self: center;
+    padding-right: 80px;
+}
+
+.nav a:link {
+    text-decoration: none;
+    padding: 40px;
+    display: inline-block;
+    color: black;
+}
+
+.nav a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+
+/* FIND LOCATION */
+
+.find-location {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 25px;
+}
+
+.find-location-title {
+    border: 2px solid blue;
+}
+
+.fl-title {
+    margin-bottom: 18px;
+}
+
+.form {
+    display: flex;
+    border: 5px solid orange;
+}
+
+.form input {
+    border: 5px solid red;
+    height: 40px;
+}
+
+.search {
+    border: 2px solid blue;
+    color: black;
+    width: 150px;
+}
+
+.filter {
+    border: 2px solid red;
+    display: flex;
+}
+
+.fa-dog,
+.fa-money-bill-wave,
+.fa-child-reaching,
+.fa-heart {
+    color: red
+}
+
+.fa-circle-info {
+    color: blue;
+}
+
+
+/* main content */
+
+.main-content {
+    display: flex;
+}
+
+.booki-hebergement {
+    display: flex;
+}
+
+.hebergement {
+    flex: 2;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #F2F2F2;
+    display: flex;
+}
