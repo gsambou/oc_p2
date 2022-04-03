@@ -1,0 +1,225 @@
+main {
+    width: 98%;
+    margin: 0 auto;
+}
+
+
+/* HEADER STYLING */
+
+header {
+    background: white;
+    margin: 5px;
+}
+
+header * {
+    margin: 10px;
+}
+
+nav ul {
+    margin-right: 30px;
+}
+
+nav li a {
+    list-style: none;
+    text-decoration: none;
+    padding: 30px 20px;
+    color: black;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+
+/* form */
+
+form {
+    display: flex;
+    max-width: 500px;
+}
+
+form * {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+form .icon {
+    background: #F2F2F2;
+    border: none;
+    padding: 12px 26px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: none
+}
+
+form .search-input {
+    font-size: 18px;
+    border: 1px solid #F2F2F2;
+    width: 350px;
+    padding-left: 15px;
+}
+
+form .search-input::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
+form .search-btn:active {
+    border: none;
+}
+
+.search-btn {
+    font-weight: 700;
+    padding: 0px 30px;
+    color: white;
+    font-size: 18px;
+    background: #0065FC;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid #0065FC;
+}
+
+.icon-search-btn {
+    display: none;
+}
+
+
+/* filtre */
+
+.filter-badges>*+* {
+    margin-left: 1em;
+}
+
+.filter-badge * {
+    margin: 0px;
+}
+
+.filter-badge {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.filter-badge i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DEEBFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: -2px;
+}
+
+.filter-badge span {
+    display: inline-block;
+    align-items: center;
+    padding: 0px 20px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.filter-badges .fa-dog,
+.fa-money-bill-wave,
+.fa-child-reaching,
+.fa-heart,
+.fa-circle-info {
+    color: #0065FC;
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+}
+
+.location-info i {
+    color: #0065FC;
+    border-radius: 50%;
+    border: 3px solid #F2F2F2;
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-badge:hover {
+    background: #F2F2F2;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* Hebergement à Marseille */
+
+.hebergement-marseille,
+.popular-marseille {
+    background: #F2F2F2;
+}
+
+.hebergement-marseille h1,
+.popular-marseille h1 {
+    padding: 25px;
+    padding-bottom: 0px;
+    font-size: 24px;
+}
+
+.hebergement-marseille .info {
+    padding: 20px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.hebergement-details {
+    padding: 10px;
+}
+
+.hebergement-details * {
+    padding-bottom: 4px;
+}
+
+.hebergement-card,
+.popular-card {
+    margin: 20px;
+}
+
+.popular-card {
+    background: white;
+}
+
+
+/* STARS */
+
+.popular-details .stars i,
+.hebergement-details .stars i {
+    color: #0065FC;
+}
+
+.hebergement-details .less i:last-child,
+.hebergement-details .less i.unstarted {
+    color: #F2F2F2;
+}
+
+.popular-details .stars i:last-child {
+    color: #F2F2F2;
+}
+
+.popular-details .full i:last-child {
+    color: #0065FC;
+}
+
+.activity-name {
+    margin: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    background: #F2F2F2;
+    margin-top: 40px;
+}
