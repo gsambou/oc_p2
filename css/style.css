@@ -164,7 +164,7 @@ form .search-btn:active {
 .location-info i {
     color: #0065FC;
     border-radius: 50%;
-    border: 3px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     height: 30px;
     width: 30px;
     margin: 0px;
@@ -182,11 +182,6 @@ form .search-btn:active {
 .location-info {
     display: flex;
     gap: 12px;
-}
-
-footer {
-    background: #F2F2F2;
-    margin-top: 40px;
 }
 
 .activity-card {
@@ -214,6 +209,7 @@ footer {
     justify-content: space-around;
     padding: 40px;
     width: 100%;
+    margin-top: 40px;
 }
 
 .footer-info {
