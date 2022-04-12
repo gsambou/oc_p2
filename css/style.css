@@ -1,18 +1,12 @@
-main {
-    width: 98%;
-    margin: 0 auto;
-}
-
-
 /* HEADER STYLING */
 
 header {
+    display: flex;
+    flex-direction: column;
     background: white;
     margin: 5px;
-}
-
-header * {
-    margin: 10px;
+    width: 100%;
+    margin-bottom: 24px;
 }
 
 nav ul {
@@ -31,46 +25,13 @@ nav ul li {
     margin: 10px;
 }
 
-
-/* form */
-
-form {
-    display: flex;
-    max-width: 500px;
-}
-
-form * {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-form .icon {
-    background: #F2F2F2;
-    border: none;
-    padding: 12px 26px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-top-right-radius: none
-}
-
-form .search-input {
-    font-size: 18px;
-    border: 1px solid #F2F2F2;
-    width: 350px;
-    padding-left: 15px;
-}
-
-form .search-input::placeholder {
-    font-weight: bold;
-    color: black;
-}
-
-form .search-btn:active {
-    border: none;
+nav ul li a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
 
 .search-btn {
-    font-weight: 700;
+    font-weight: 500;
     padding: 0px 30px;
     color: white;
     font-size: 18px;
@@ -80,12 +41,75 @@ form .search-btn:active {
     border: 1px solid #0065FC;
 }
 
+
+/** form **/
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 24px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.form-section>* {
+    margin-bottom: 12px;
+}
+
+form {
+    display: flex;
+    max-width: 500px;
+}
+
+form .icon {
+    background: #F2F2F2;
+    border: none;
+    padding: 14px 26px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: none
+}
+
+form .search-input {
+    font-size: 18px;
+    border: 1px solid #F2F2F2;
+    max-width: 300px;
+    padding-left: 15px;
+}
+
+form .search-input::placeholder {
+    font-weight: bold;
+    color: black;
+    letter-spacing: 0.5px;
+}
+
+form .search-btn:active {
+    border: none;
+}
+
 .icon-search-btn {
     display: none;
 }
 
 
-/* filtre */
+/** Filter **/
+
+.filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 24px 0;
+    gap: 24px;
+}
+
+.filter-badges {
+    display: flex;
+    gap: 12px;
+}
 
 .filter-badges>*+* {
     margin-left: 1em;
@@ -155,71 +179,59 @@ form .search-btn:active {
     font-size: 18px;
 }
 
-
-/* Hebergement à Marseille */
-
-.hebergement-marseille,
-.popular-marseille {
-    background: #F2F2F2;
-}
-
-.hebergement-marseille h1,
-.popular-marseille h1 {
-    padding: 25px;
-    padding-bottom: 0px;
-    font-size: 24px;
-}
-
-.hebergement-marseille .info {
-    padding: 20px;
-    padding-left: 25px;
-    cursor: pointer;
-}
-
-.hebergement-details {
-    padding: 10px;
-}
-
-.hebergement-details * {
-    padding-bottom: 4px;
-}
-
-.hebergement-card,
-.popular-card {
-    margin: 20px;
-}
-
-.popular-card {
-    background: white;
-}
-
-
-/* STARS */
-
-.popular-details .stars i,
-.hebergement-details .stars i {
-    color: #0065FC;
-}
-
-.hebergement-details .less i:last-child,
-.hebergement-details .less i.unstarted {
-    color: #F2F2F2;
-}
-
-.popular-details .stars i:last-child {
-    color: #F2F2F2;
-}
-
-.popular-details .full i:last-child {
-    color: #0065FC;
-}
-
-.activity-name {
-    margin: 20px;
-    margin-top: 10px;
+.location-info {
+    display: flex;
+    gap: 12px;
 }
 
 footer {
     background: #F2F2F2;
     margin-top: 40px;
+}
+
+.activity-card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background: white;
+    border-radius: 25px;
+}
+
+.activity-card img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.activity-name {
+    margin: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+    width: 100%;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-info ul li {
+    margin-left: -40px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.footer-info h2 {
+    font-weight: 600;
 }
