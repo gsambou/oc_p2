@@ -35,20 +35,20 @@ button {
 
 /* STARS */
 
-.popular-details .stars i,
-.hebergement-details .stars i {
+.popular-description .stars i,
+.hebergement-description .stars i {
     color: #0065FC;
 }
 
-.hebergement-details .less i:last-child,
-.hebergement-details .less i.unstarted {
+.hebergement-description .less i:last-child,
+.hebergement-description .less i.unstarted {
     color: #F2F2F2;
 }
 
-.popular-details .stars i:last-child {
+.popular-description .stars i:last-child {
     color: #F2F2F2;
 }
 
-.popular-details .full i:last-child {
+.popular-description .full i:last-child {
     color: #0065FC;
 }
