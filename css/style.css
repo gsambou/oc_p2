@@ -23,11 +23,12 @@ header {
 }
 
 .main-header .logo {
-    width: 140px;
+    width: 130px;
 }
 
 .main-header nav {
     margin-right: 26px;
+    margin-top: 16px;
 }
 
 .main-header nav ul {
@@ -45,10 +46,11 @@ header {
 
 .main-header nav ul li a {
     padding: 26px;
+    color: black;
 }
 
 .main-header nav ul li a:hover {
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
     color: #0065FC;
 }
 
@@ -426,17 +428,22 @@ form .icon-search-btn {
 
 footer {
     background: #F2F2F2;
+}
+
+.footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 40px;
-    width: 100%;
+    padding: 40px 16px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1400px;
     margin-top: 40px;
 }
 
 .footer-info {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .footer-info ul {
